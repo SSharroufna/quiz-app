@@ -37,7 +37,11 @@ body {
     font-weight: 600;
 }
 
-.btn {
+ul {
+    list-style-type: none;
+}
+
+.quiz-options li {
     background: #fff;
     color: #222;
     font-weight: 500;
@@ -50,7 +54,7 @@ body {
     cursor: pointer;
 }
 
-.btn:hover {
+.quiz-options li:hover {
     background: #222;
     color: #fff;
 }
