@@ -1,5 +1,6 @@
 //API URL: https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple
 
+const _checkBtn = document.getElementById('check-answer');
 
 
 function eventListeners(){
@@ -8,6 +9,7 @@ function eventListeners(){
 
 document.addEventListener('DOMContentLoaded', () => {
     loadQuestions();
+    eventListeners();
 })
 
 async function loadQuestions(){
@@ -54,7 +56,19 @@ function selectOption(){
 }
 
 function checkAnswer(){
-console.log('hello');
+  
+    document.querySelector('.quiz-options').disabled = true;
+ 
+    if (document.querySelector('.quiz-options').querySelector('.selected')){
+        console.log("selectedanswer");
+        let selectedAnswer = document.querySelector('.quiz-options').querySelector('.selected span').textContent;
+        if(selectedAnswer == correctAnswer){
+            correctScore++;
+            console.log('you got a point');
+        }
+    }
+
+
 }
 
 
