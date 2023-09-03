@@ -37,14 +37,16 @@ body {
     font-weight: 600;
 }
 
-ul {
+.quiz-options {
     list-style-type: none;
+    margin: 1rem 0;
 }
 
 .quiz-options li {
     background: #fff;
     color: #222;
     font-weight: 500;
+    list-style-type: none;
     width: 100%;
     border: 1px solid #222;
     padding: 10px;
@@ -63,7 +65,7 @@ ul {
 }
 
 .selected {
-    background: #222 !important;
+    background: #333 !important;
     color: #fff !important;
 }
 
