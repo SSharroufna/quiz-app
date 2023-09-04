@@ -14,7 +14,7 @@ const _result = document.getElementById('result');
 //Event listeners
 function eventListeners(){
     _checkBtn.addEventListener('click', checkAnswer);
-    _playAgain.addEventListener('click', restartQuiz());
+    _playAgain.addEventListener('click', restartQuiz);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
